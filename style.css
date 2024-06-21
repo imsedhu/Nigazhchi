@@ -29,7 +29,18 @@ nav{
 }
 
 /* home carousel */
+.carousel-item{
+  height: 600px;
+}
 .carousel img{
-  width: 100%;
-  height: 60%;
+  height: 100%;
+  object-fit:cover;
+  filter: brightness(0.4);
+}
+.carousel-caption{
+  margin-top: 200px;
+}
+.carousel-caption h5{
+  font-size: 80px;
+
 }
