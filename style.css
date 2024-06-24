@@ -8,8 +8,8 @@
   --fourth-color: #FEFFD2;
 }
 
-body{
-  background-color: var(--fourth-color);
+.body{
+  background-color: var(--third-color);
 }
 
 *{
@@ -36,7 +36,7 @@ nav{
 .carousel img{
   height: 100%;
   object-fit:cover;
-  filter: brightness(0.4);
+  filter: brightness(0.7);
 }
 .carousel-caption{
   margin-top: 160px;
@@ -44,4 +44,28 @@ nav{
 .slide-title{
   font-size: 60px;
   text-transform: uppercase;
+}
+
+/* app features carousel */
+.feature-title{
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #FFBF78;
+  display: none;
+  transition: all .4s;
+}
+.feature-title:hover{
+  display: block;
+}
+.feature-img{
+  width: 100%;
+  filter: brightness(0.4);
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+}
+.feature-card:hover img{
+  transform: scale(1.1);
 }
