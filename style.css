@@ -9,7 +9,7 @@
 }
 
 .body{
-  background-color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 *{
@@ -42,30 +42,31 @@ nav{
   margin-top: 160px;
 }
 .slide-title{
-  font-size: 60px;
+  font-weight: 700;
+  font-size: 40px;
   text-transform: uppercase;
+  color: var(--secondary-color);
 }
 
 /* app features carousel */
-.feature-title{
-  position: absolute;
-  top: 120px;
-  left: 120px;
-  font-size: 25px;
-  font-weight: 700;
-  color: #FFBF78;
-  display: none;
-  transition: all .4s;
+.feature-box{
+  
 }
-.feature-title:hover{
-  display: block;
+.owl-carousel{
+  
 }
 .feature-img{
-  width: 100%;
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   border-radius: 10px;
-  transition: 0.5s all ease-in-out;
+  transition: all .4s;
+  position: relative;
 }
-.feature-card:hover img{
-  transform: scale(1.1);
+.feature-img:hover {
+  filter: brightness(1);
+}
+.feature-title{
+  position: absolute;
+  top:50%;
+  left: 40%;
+  color: var(--third-color);
 }
