@@ -9,7 +9,7 @@
 }
 
 .body{
-  background-color: var(--fourth-color);
+  background-color: var(--third-color);
 }
 
 *{
@@ -49,12 +49,6 @@ nav{
 }
 
 /* app features carousel */
-.feature-box{
-  
-}
-.owl-carousel{
-  
-}
 .feature-img{
   filter: brightness(0.3);
   border-radius: 10px;
