@@ -89,7 +89,7 @@
   </div>
 
 <!-- app features carousel -->
-<div class="owl-carousel my-5 px-3">
+<div class="owl-carousel mt-3 px-1">
   <div class="feature-box">
     <a href="#" class="page-link">
       <img src="./assets/features/wedding hall.jpg" alt="image" class="feature-img">
@@ -122,18 +122,28 @@
     <a href="#" class="page-link">
       <img src="https://images.unsplash.com/photo-1545242640-7c9e9cc07d23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG8lMjBzdHVkaW98ZW58MHx8MHx8fDA%3D" alt="image" class="feature-img">
     </a>
-    <p class="feature-title">photoghaper</p>
+    <p class="feature-title">photo</p>
   </div>
   
 </div>
 
 
 <!-- wedding hall section -->
-<section>
-  <h2>Wedding Hall</h2>
-  <div class="wedding-hall-container">
-    
+<section id="wedding-hall" class="container-fluid">
+  <h2 class="fs-6">Wedding Hall</h2>
+  <div class="wedding-hall-container" id="wedding-hall">
+  <div class="wedding-hall-box">
+    <img src="./assets/imgs/wedding hall/Venue-photos-District-wise/pudukkottai/ams mahal.png" alt="" class="hall-img">
+    <div class="hall-body">
+      <p class="hall-name">AMS mahal</p>
+      <p class="hall-location">Pudukkottai</p>
+      <p class="hall-occupancy">1000</p>
+      <p class="hall-price">30,000/day</p>
+      <p class="hall-available">booked</p>
+      <button>book</button>
+    </div>
   </div>
+</div>
 </section>
 
 
@@ -149,6 +159,30 @@
   <script>
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel({
+        margin:10,
+        responsive:{
+          0:{
+              items:5,
+              nav:true
+          },
+          600:{
+              items:5,
+              nav:false
+          },
+          1000:{
+              items:5,
+              nav:true,
+              loop:false
+          }
+      }
+      });
+    });
+  </script>
+
+  <!-- wedding hall owl carousel -->
+  <script>
+    $(document).ready(function(){
+      $("#wedding-hall").owlCarousel({
         margin:10,
         responsive:{
           0:{
